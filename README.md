@@ -6,5 +6,5 @@
 - 2021-02 : til 작성 방식 변경(느낀점 위주 -> 알게된 지식 정리 위주)
 - 2021-03 : til 작성방식 회귀(느낀점 위주로 다시 변경, til 은 til 만
 - 2022-04 : til 블로그를 별도 작성(nest로) 후 블로그로 이전
-- 2022-05 : til 블로그 업데이트(backend, react)
+- 2022-05 : til 블로그 업데이트(backainend, react)
 - 2022-06 : til git repository 로 다시 이전
