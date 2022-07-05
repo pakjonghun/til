@@ -1,0 +1,44 @@
+---
+date: 2022-07-05
+category: til, algo
+---
+
+## 문제
+
+- 숫자 n 을 k 진수로 변환했을때
+- 앞뒤로 0 이 있거나 앞에만 0 뒤에는 아무것도 없거나, 뒤에만 0 앞에는 아무것도 없는 소수의 숫자를 구하라
+
+## 풀이
+
+- 소수 구하기는 어렵지 않았다. 알던대로 제곱근까지 나누는 방식으로 구분했다
+- 문제는 2번째 조건인데 조건 대로 조건문을 다 만드니 계속 다른 조건이 생겨나서 고민민 끝에
+- 그냥 0 으로 split 해줬더니 간단히 해결되었다.
+
+```
+  function isPrime(number) {
+      if (!number) return false;
+      if (number === "1") return false;
+      for (let i = 2; i <= Math.sqrt(number); i++) {
+        if (!(number % i)) return false;
+      }
+
+      return true;
+    }
+
+    function solution(n, k) {
+      const num = n.toString(k);
+      let answer = 0;
+
+      const arr = num.split("0");
+
+      for (const item of arr) {
+        if (isPrime(item)) {
+          console.log(item);
+          answer++;
+        }
+      }
+
+      return answer;
+    }
+
+```
